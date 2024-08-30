@@ -1,10 +1,11 @@
-num = 4
+num = 6
+
+# Initialize the factorial variable to 1
 factorial = 1
-if num<0:
- print("factorial doesnt exists")
-elif num==0:
- print("factorial of 0 is 1")
-else:
- for i in range(num,num+1):
-   factorial=factorial*1
-print("the factorial",num,"is",factorial)
+
+# Calculate the factorial using a for loop
+for i in range(1, num + 1):
+    factorial *= i
+
+# Output: The factorial of the number
+print(f"The factorial of {num} is {factorial}")
